@@ -1,0 +1,56 @@
+nodes:
+  - id: researcher
+    type: researcher
+    label: "Your Name"
+
+  - id: quantum-sensing
+    type: project
+    label: "Quantum Sensing"
+    years: "2022–present"
+    url: "/projects/quantum-sensing/"
+
+  - id: metrology
+    type: project
+    label: "Measurement Standards"
+    years: "2023–present"
+    url: "/projects/metrology/"
+
+  - id: yourname2024quantum
+    type: paper
+    status: published
+    label: "Quantum-Enhanced Sensing Beyond the Standard Quantum Limit"
+    year: 2024
+    venue: "Physical Review Letters"
+    url: "https://doi.org/10.1103/PhysRevLett.132.010401"
+
+  - id: yourname2023metrology
+    type: paper
+    status: published
+    label: "Traceable Measurement Standards for Quantum Devices"
+    year: 2023
+    venue: "Metrologia"
+    url: "https://doi.org/10.1088/0026-1394/60/4/045001"
+
+  - id: yourname2025inprogress
+    type: paper
+    status: in-progress
+    label: "Advances in Quantum Metrology at NIST"
+    year: 2025
+    venue: ""
+    url: ""
+
+edges:
+  - source: researcher
+    target: quantum-sensing
+
+  - source: researcher
+    target: metrology
+
+  - source: quantum-sensing
+    target: yourname2024quantum
+
+  - source: metrology
+    target: yourname2023metrology
+
+  - source: quantum-sensing
+    target: yourname2025inprogress
