@@ -1,0 +1,125 @@
+---
+layout: default
+---
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+
+  <!-- View toggle -->
+  <div class="d-flex gap-2 mb-4" id="view-toggle">
+    <button class="btn btn-sm btn-primary" id="btn-graph" onclick="showView('graph')">
+      Graph View
+    </button>
+    <button class="btn btn-sm btn-outline-primary" id="btn-list" onclick="showView('list')">
+      List View
+    </button>
+  </div>
+
+  <!-- Graph View (default) -->
+  <div id="graph-view">
+    <div id="publication-graph" style="width:100%; height:600px; border:1px solid #dee2e6; border-radius:8px; background:#f8fafc;">
+      <p class="text-muted p-3">Graph loading...</p>
+    </div>
+    <p class="text-muted small mt-2">Drag to rearrange. Hover for details. Click to open.</p>
+  </div>
+
+  <!-- List View (hidden by default) -->
+  <div id="list-view" style="display:none;">
+    {% assign project_nodes = site.data.graph.nodes | where: "type", "project" %}
+    {% for proj_node in project_nodes %}
+      {% assign proj_page = site.projects | where: "slug", proj_node.id | first %}
+      <div class="mb-5" id="{{ proj_node.id }}">
+        <h3>
+          {% if proj_page %}
+            <a href="{{ proj_page.url | relative_url }}">{{ proj_node.label }}</a>
+          {% else %}
+            {{ proj_node.label }}
+          {% endif %}
+          {% if proj_node.years %}
+            <small class="text-muted ms-2">{{ proj_node.years }}</small>
+          {% endif %}
+        </h3>
+
+        {% assign paper_ids = "" | split: "" %}
+        {% for edge in site.data.graph.edges %}
+          {% if edge.source == proj_node.id %}
+            {% assign paper_ids = paper_ids | push: edge.target %}
+          {% endif %}
+        {% endfor %}
+
+        {% if paper_ids.size > 0 %}
+        <ul>
+          {% for node in site.data.graph.nodes %}
+            {% if node.type == "paper" and paper_ids contains node.id %}
+            <li class="{% if node.status == 'in-progress' %}text-muted{% endif %} mb-1">
+              {% if node.url != "" %}
+                <a href="{{ node.url }}" target="_blank">{{ node.label }}</a>
+              {% else %}
+                {{ node.label }}
+              {% endif %}
+              ({{ node.year }})
+              {% if node.venue != "" %} &mdash; <em>{{ node.venue }}</em>{% endif %}
+              {% if node.status == "in-progress" %}
+                <span class="badge bg-warning text-dark ms-1">In preparation</span>
+              {% endif %}
+            </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+    {% endfor %}
+
+    <!-- Orphan papers (no project edge) -->
+    {% assign all_edge_targets = site.data.graph.edges | map: "target" %}
+    {% assign orphan_papers = "" | split: "" %}
+    {% for node in site.data.graph.nodes %}
+      {% if node.type == "paper" %}
+        {% unless all_edge_targets contains node.id %}
+          {% assign orphan_papers = orphan_papers | push: node %}
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+    {% if orphan_papers.size > 0 %}
+    <div class="mb-5" id="other">
+      <h3>Other Publications</h3>
+      <ul>
+        {% for node in orphan_papers %}
+        <li class="mb-1">
+          {% if node.url != "" %}
+            <a href="{{ node.url }}" target="_blank">{{ node.label }}</a>
+          {% else %}
+            {{ node.label }}
+          {% endif %}
+          ({{ node.year }})
+          {% if node.venue != "" %} &mdash; <em>{{ node.venue }}</em>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </div>
+
+  <!-- Inject graph data for D3 (Task 6) -->
+  <script>
+  window.graphData = {{ site.data.graph | jsonify }};
+  </script>
+
+  <!-- D3 and graph script (added in Task 6) -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@7" defer></script>
+  <script src="{{ '/assets/js/publication-graph.js' | relative_url }}" defer></script>
+  <link rel="stylesheet" href="{{ '/assets/css/publication-graph.css' | relative_url }}">
+
+  <script>
+  function showView(view) {
+    document.getElementById('graph-view').style.display = view === 'graph' ? 'block' : 'none';
+    document.getElementById('list-view').style.display  = view === 'list'  ? 'block' : 'none';
+    document.getElementById('btn-graph').className = view === 'graph'
+      ? 'btn btn-sm btn-primary' : 'btn btn-sm btn-outline-primary';
+    document.getElementById('btn-list').className = view === 'list'
+      ? 'btn btn-sm btn-primary' : 'btn btn-sm btn-outline-primary';
+  }
+  </script>
+</div>
