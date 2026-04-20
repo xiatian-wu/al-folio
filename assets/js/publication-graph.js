@@ -119,7 +119,18 @@ function initGraph(data) {
     })
     .on('mouseout', function() { tooltip.style('display', 'none'); })
     .on('click', function(event, d) {
-      if (d.url) window.open(d.url, '_blank');
+      if (d.type === 'project') {
+        // Switch to list view and scroll to the project section
+        if (typeof showView === 'function') showView('list');
+        var target = document.getElementById(d.id);
+        if (target) {
+          setTimeout(function() {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 50);
+        }
+      } else if (d.type === 'paper' && d.url) {
+        window.open(d.url, '_blank');
+      }
     });
 
   var label = svg.append('g')

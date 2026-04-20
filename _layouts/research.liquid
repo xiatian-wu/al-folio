@@ -41,7 +41,7 @@ layout: default
         <svg width="12" height="12" style="vertical-align:middle;margin-right:4px;"><circle cx="6" cy="6" r="6" fill="#94a3b8"/></svg>
         In preparation
       </span>
-      <span class="text-muted small ml-auto">Drag to rearrange &middot; hover for details &middot; click to open</span>
+      <span class="text-muted small ml-auto">Drag to rearrange &middot; hover for details &middot; click topic to jump to list</span>
     </div>
   </div>
 
@@ -57,10 +57,6 @@ layout: default
             <small class="text-muted ml-2">{{ proj_node.years }}</small>
           {% endif %}
         </h3>
-        {% if proj_page and proj_page.description %}
-          <p class="text-muted">{{ proj_page.description }}</p>
-        {% endif %}
-
         {% assign paper_ids = "" | split: "" %}
         {% for edge in site.data.graph.edges %}
           {% if edge.source == proj_node.id %}
