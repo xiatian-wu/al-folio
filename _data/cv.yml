@@ -1,50 +1,69 @@
 cv:
-  name: Your Name
-  label: Research Scientist
-  email: your@email.com
-  location: Gaithersburg, MD
+  name: Xiatian Iogansen
+  label: Postdoctoral Researcher
+  email: xiatian.iogansen@gwu.edu
+  location: Washington, DC
 
-  address:
-    street: 100 Bureau Drive
-    city: Gaithersburg
-    region: Maryland
-    postalCode: MD 20899
-    countryCode: US
-
-  summary: Research scientist at NIST working on quantum sensing, metrology, and signal processing.
+  summary: >
+    Postdoctoral researcher at GWU and NIST studying consumer preferences,
+    market demand, and behavioral impacts of emerging transportation services.
 
   sections:
     Experience:
-      - company: National Institute of Standards and Technology (NIST)
-        position: Research Scientist
-        location: Gaithersburg, MD
-        start_date: 2023
+      - company: The George Washington University & National Institute of Standards and Technology (NIST)
+        position: Postdoctoral Associate
+        location: Washington, DC / Gaithersburg, MD
+        start_date: 2025
         end_date: Present
         highlights:
-          - Research focus area 1
-          - Research focus area 2
+          - Analyzed national survey data to examine U.S. consumer perceptions, knowledge, and adoption patterns of battery electric vehicles
+          - Led design and implementation of a stated preference survey to quantify consumer perceptions and willingness-to-pay for used vehicles and battery health information
 
-      - company: Previous Institution
-        position: Postdoctoral Fellow
-        location: City, State
-        start_date: 2021
-        end_date: 2023
+      - company: Institute of Transportation Studies, University of California, Davis
+        position: Researcher
+        location: Davis, CA
+        start_date: 2020
+        end_date: 2024
         highlights:
-          - Key project or accomplishment
+          - Designed and launched surveys studying pandemic impacts on vehicle ownership, zero-emission vehicle adoption among ridehailing drivers, and car dependence in the Los Angeles region
+          - Published peer-reviewed journal papers and crafted reports/policy briefs for agencies and stakeholders
+          - Presented research findings at domestic and international conferences
+
+      - company: Public Transportation Division, WA State Department of Transportation
+        position: Data Analyst
+        location: Olympia, WA
+        start_date: 2017
+        end_date: 2019
+        highlights:
+          - Conducted demand response service analysis, mapping underserved areas and population
+          - Led statewide accessibility analysis using ArcGIS and Sugar Access software
+          - Visualized findings using Tableau dashboard to inform policy decisions
 
     Education:
-      - institution: University Name
-        area: Your Field
-        studyType: PhD
-        location: City, State
-        start_date: 2017
-        end_date: 2021
-        highlights:
-          - Dissertation title
+      - institution: University of California, Davis
+        area: Transportation Technology and Policy
+        studyType: Ph.D.
+        location: Davis, CA
+        start_date: 2019
+        end_date: 2024
 
-      - institution: University Name
-        area: Your Field
-        studyType: BS
-        location: City, State
-        start_date: 2013
-        end_date: 2017
+      - institution: University of Washington
+        area: Transportation Engineering
+        studyType: M.Sc.
+        location: Seattle, WA
+        start_date: 2017
+        end_date: 2019
+
+      - institution: University of Washington
+        area: Urban Planning
+        studyType: M.S.
+        location: Seattle, WA
+        start_date: 2016
+        end_date: 2018
+
+      - institution: Zhejiang University of Science and Technology
+        area: Urban Planning
+        studyType: B.A.
+        location: China
+        start_date: 2014
+        end_date: 2016

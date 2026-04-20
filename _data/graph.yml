@@ -1,56 +1,166 @@
 nodes:
   - id: researcher
     type: researcher
-    label: "Your Name"
+    label: "Xiatian Iogansen"
 
-  - id: quantum-sensing
+  - id: ev-adoption
     type: project
-    label: "Quantum Sensing"
-    years: "2022–present"
-    url: "/projects/quantum-sensing/"
-
-  - id: metrology
-    type: project
-    label: "Measurement Standards"
+    label: "EV Adoption & Consumer Behavior"
     years: "2023–present"
-    url: "/projects/metrology/"
+    url: "/about-me/projects/ev-adoption/"
 
-  - id: yourname2024quantum
+  - id: ridehailing
+    type: project
+    label: "Ride-hailing & Mobility"
+    years: "2019–present"
+    url: "/about-me/projects/ridehailing/"
+
+  - id: covid-travel
+    type: project
+    label: "COVID-19 & Travel Behavior"
+    years: "2020–2024"
+    url: "/about-me/projects/covid-travel/"
+
+  # Published papers
+  - id: iogansen2026bev
     type: paper
     status: published
-    label: "Quantum-Enhanced Sensing Beyond the Standard Quantum Limit"
-    year: 2024
-    venue: "Physical Review Letters"
-    url: "https://doi.org/10.1103/PhysRevLett.132.010401"
+    label: "Consumers' Perceptions, Knowledge, and Adoption Patterns of Battery Electric Vehicles"
+    year: 2026
+    venue: "Transportation Research Part D"
+    url: "https://doi.org/10.1016/j.trd.2025.105194"
 
-  - id: yourname2023metrology
+  - id: iogansen2023afv
     type: paper
     status: published
-    label: "Traceable Measurement Standards for Quantum Devices"
+    label: "Deciphering the Factors Associated with Adoption of Alternative Fuel Vehicles in California"
     year: 2023
-    venue: "Metrologia"
-    url: "https://doi.org/10.1088/0026-1394/60/4/045001"
+    venue: "Transportation Research Part A"
+    url: "https://doi.org/10.1016/j.tra.2022.10.012"
 
-  - id: yourname2025inprogress
+  - id: compostella2025pooled
+    type: paper
+    status: published
+    label: "An Investigation of the Factors That Affect the Use of Pooled Ridehailing Services in California"
+    year: 2025
+    venue: "Transportation Research Part A"
+    url: "https://doi.org/10.1016/j.tra.2025.104626"
+
+  - id: loa2025ridehailing
+    type: paper
+    status: published
+    label: "Are All Ride-hailing Trips Created Equal?"
+    year: 2025
+    venue: "Transportation"
+    url: "https://doi.org/10.1007/s11116-024-10566-6"
+
+  - id: iogansen2024ridehailing
+    type: paper
+    status: published
+    label: "Ridehailing Use, Travel Patterns and Multimodality: A Latent-class Cluster Analysis"
+    year: 2024
+    venue: "Travel Behavior and Society"
+    url: "https://doi.org/10.1016/j.tbs.2024.100855"
+
+  - id: iogansen2022evolution
+    type: paper
+    status: published
+    label: "The Evolution, Usage and Trip Patterns of Taxis & Ridesourcing Services"
+    year: 2022
+    venue: "Transportation"
+    url: "https://doi.org/10.1007/s11116-021-10177-5"
+
+  - id: iogansen2021vmt
+    type: paper
+    status: published
+    label: "Assessing the VMT Effect of Ridesourcing Services in the US"
+    year: 2021
+    venue: "Transportation Research Part D"
+    url: "https://doi.org/10.1016/j.trd.2021.102816"
+
+  - id: hauslbauer2025telework
+    type: paper
+    status: published
+    label: "Teleworkers and Physical Commuters during the COVID-19 Pandemic"
+    year: 2025
+    venue: "Sustainable Transport and Livability"
+    url: "https://doi.org/10.1080/29941849.2025.2486800"
+
+  - id: iogansen2024work
+    type: paper
+    status: published
+    label: "Change in Work Arrangement during the COVID-19 Pandemic"
+    year: 2024
+    venue: "Transportation Research Interdisciplinary Perspectives"
+    url: "https://doi.org/10.1016/j.trip.2023.100969"
+
+  - id: compostella2023grocery
+    type: paper
+    status: published
+    label: "Trips to the Grocery Store and Online Grocery Shopping: Before vs. During COVID-19"
+    year: 2023
+    venue: "Transportation Research Record"
+    url: "https://doi.org/10.1177/03611981231172505"
+
+  # Under review
+  - id: iogansen2024cardependence
     type: paper
     status: in-progress
-    label: "Advances in Quantum Metrology at NIST"
-    year: 2025
-    venue: ""
+    label: "Unveiling Mobility Patterns and Strategies to Alleviate Car Dependence: Lessons from LA"
+    year: 2024
+    venue: "Journal of Transport Geography"
+    url: ""
+
+  - id: loa2024pandemic
+    type: paper
+    status: in-progress
+    label: "Understanding Differences Between Pre- and Post-Pandemic Modality for Commuting Trips"
+    year: 2024
+    venue: "Transportation Research Part A"
     url: ""
 
 edges:
   - source: researcher
-    target: quantum-sensing
+    target: ev-adoption
 
   - source: researcher
-    target: metrology
+    target: ridehailing
 
-  - source: quantum-sensing
-    target: yourname2024quantum
+  - source: researcher
+    target: covid-travel
 
-  - source: metrology
-    target: yourname2023metrology
+  - source: ev-adoption
+    target: iogansen2026bev
 
-  - source: quantum-sensing
-    target: yourname2025inprogress
+  - source: ev-adoption
+    target: iogansen2023afv
+
+  - source: ridehailing
+    target: compostella2025pooled
+
+  - source: ridehailing
+    target: loa2025ridehailing
+
+  - source: ridehailing
+    target: iogansen2024ridehailing
+
+  - source: ridehailing
+    target: iogansen2022evolution
+
+  - source: ridehailing
+    target: iogansen2021vmt
+
+  - source: covid-travel
+    target: hauslbauer2025telework
+
+  - source: covid-travel
+    target: iogansen2024work
+
+  - source: covid-travel
+    target: compostella2023grocery
+
+  - source: covid-travel
+    target: iogansen2024cardependence
+
+  - source: covid-travel
+    target: loa2024pandemic
