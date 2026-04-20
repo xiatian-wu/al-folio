@@ -18,7 +18,7 @@ function determineGiscusTheme() {
 
   let giscusAttributes = {
     src: "https://giscus.app/client.js",
-    "data-repo": "xiatian-wu/al-folio",
+    "data-repo": "xiatian-wu/about-me",
     "data-repo-id": "",
     "data-category": "Comments",
     "data-category-id": "",

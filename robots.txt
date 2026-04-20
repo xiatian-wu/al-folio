@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://xiatian-wu.github.io/al-folio/sitemap.xml
+Sitemap: https://xiatian-wu.github.io/about-me/sitemap.xml
