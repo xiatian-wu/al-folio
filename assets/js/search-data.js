@@ -9,14 +9,7 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/al-folio/";
     },
-  },{id: "nav-about",
-          title: "about",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/al-folio/";
-          },
-        },{id: "nav-research",
+  },{id: "nav-research",
           title: "Research",
           description: "",
           section: "Navigation",
@@ -29,13 +22,6 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/al-folio/blog/";
-          },
-        },{id: "nav-people",
-          title: "people",
-          description: "members of the lab or group",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/al-folio/people/";
           },
         },{id: "post-welcome",
         
