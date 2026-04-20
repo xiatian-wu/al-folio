@@ -27,7 +27,7 @@ ninja.data = [{
         
           title: "How I Built This Website",
         
-        description: "A plain-language walkthrough of building an academic personal website with AI assistance — what we built, what went wrong, and what I learned.",
+        description: "A plain-language walkthrough of building an academic personal website with AI assistance — what we built, decisions made, and tools used.",
         section: "Posts",
         handler: () => {
           
