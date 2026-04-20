@@ -4,7 +4,7 @@
 >
 > Read the build story: **[How I Built This Website](https://xiatian-wu.github.io/about-me/blog/2026/building-personal-website/)**
 
-A clean, responsive academic personal website built on [al-folio](https://github.com/alshedivat/al-folio) and hosted on GitHub Pages. Built entirely with [Claude Code](https://claude.com/claude-code) AI assistance — no prior web development experience required.
+A clean, responsive academic personal website built on [al-folio](https://github.com/alshedivat/al-folio) and hosted on GitHub Pages. Built with the assist from [Claude Code](https://claude.com/claude-code) AI assistance.
 
 ---
 
@@ -19,8 +19,8 @@ Experience and education are rendered automatically from a structured YAML file 
 ### Draft Paper Support
 Papers under review or in preparation can include a **Draft** download button, so visitors can read your work before it's formally published. Just drop a PDF in `assets/pdf/` and add the path to `_data/graph.yml`.
 
-### AI-Built Workflow
-This site was built entirely through natural-language instructions to Claude Code. The [blog post](https://xiatian-wu.github.io/about-me/blog/2026/building-personal-website/) documents the full process, decisions made, and lessons learned — useful if you want to replicate the workflow.
+### Workflow
+The [blog post](https://xiatian-wu.github.io/about-me/blog/2026/building-personal-website/) documents the full process, decisions made, and lessons learned — useful if you want to replicate the workflow.
 
 ---
 
