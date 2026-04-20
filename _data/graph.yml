@@ -8,24 +8,28 @@ nodes:
     label: "EV Adoption & Consumer Behavior"
     years: "2023–present"
     url: "/about-me/projects/ev-adoption/"
+    description: "Understanding consumer perceptions, knowledge, and willingness-to-pay for electric and alternative fuel vehicles."
 
   - id: ridehailing
     type: project
     label: "Ride-hailing & Mobility"
     years: "2019–present"
     url: "/about-me/projects/ridehailing/"
+    description: "Examining travel patterns, multimodality, and the broader mobility impacts of ride-hailing services."
 
   - id: covid-travel
     type: project
     label: "COVID-19 & Travel Behavior"
     years: "2020–2024"
     url: "/about-me/projects/covid-travel/"
+    description: "Investigating pandemic-driven shifts in work arrangements, vehicle ownership, and daily travel patterns."
 
   - id: recycled-plastic
     type: project
     label: "Adoption of Recycled Plastic Products"
     years: "2024–present"
     url: "/about-me/projects/recycled-plastic/"
+    description: "Applying discrete choice experiments to understand consumer willingness-to-pay for recycled plastic products."
 
   # Published papers
   - id: iogansen2026bev

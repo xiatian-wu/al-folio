@@ -107,9 +107,11 @@ function initGraph(data) {
         })
     )
     .on('mouseover', function(event, d) {
-      var lines = [d.label];
-      if (d.year)  lines.push(String(d.year));
-      if (d.venue) lines.push(d.venue);
+      var lines = ['<strong>' + d.label + '</strong>'];
+      if (d.years)       lines.push(d.years);
+      if (d.description) lines.push('<em>' + d.description + '</em>');
+      if (d.year)        lines.push(String(d.year));
+      if (d.venue)       lines.push(d.venue);
       tooltip.style('display', 'block').html(lines.join('<br>'));
     })
     .on('mousemove', function(event) {
