@@ -105,5 +105,3 @@ The entire project was built using **Claude Code** with the [Superpowers plugin]
 The most impactful habit was **writing a plan before coding**. Even a short list of steps prevents the drift that comes from making decisions on the fly.
 
 ---
-
-*If you are an academic thinking about building your own site, the barrier is lower than it looks — especially with AI assistance.*
