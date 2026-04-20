@@ -7,6 +7,8 @@ tags: [website, workflow]
 categories: [meta]
 ---
 
+> Thinking about building your own website? The barrier is lower than it looks — especially with AI assistance!
+
 This site was built in a single session using [Claude Code](https://claude.com/claude-code), an AI coding assistant. I described what I wanted, and we built it together step by step. This post is a record of how that went.
 
 ---
