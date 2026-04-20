@@ -57,13 +57,24 @@ This site was built in a single session using [Claude Code](https://claude.com/c
 
 ---
 
+## Tools Used
+
+| Tool | Purpose |
+|---|---|
+| [Claude Code](https://claude.com/claude-code) | AI coding assistant — wrote and debugged code from plain instructions |
+| [al-folio](https://github.com/alshedivat/al-folio) | Website template built for academics |
+| [GitHub Pages](https://pages.github.com) | Free hosting with automatic deployment |
+| [D3.js](https://d3js.org) | Library used to draw the interactive research graph |
+
+---
+
 ## Key Choices
 
 **Website template:** I used [al-folio](https://github.com/alshedivat/al-folio), a free template designed for academic researchers. It came with a publications page, a blog, and a clean layout out of the box.
 
 **Hosting:** The site is hosted on GitHub Pages — free, reliable, and automatically rebuilds every time I save a change. No server to manage.
 
-**Research graph:** The interactive graph on the Research page was a custom addition. It shows my research topics and papers as connected dots. Clicking a topic scrolls to the paper list; hovering shows a description.
+**Research graph:** The interactive graph on the Research page was inspired by my experience using [Obsidian](https://obsidian.md) — a note-taking app where ideas are visualized as a network of connected nodes. I wanted the same feel for my research: topics and papers linked together, explorable at a glance. Clicking a topic scrolls to the paper list; hovering shows a description.
 
 **CV section:** Rather than designing a timeline from scratch, I structured my CV as a simple data file. The site reads it and renders the timeline automatically.
 
@@ -92,17 +103,6 @@ The entire project was built using **Claude Code** with the [Superpowers plugin]
 | `requesting-code-review` | Got an independent review after each major feature to catch mistakes early |
 
 The most impactful habit was **writing a plan before coding**. Even a short list of steps prevents the drift that comes from making decisions on the fly.
-
----
-
-## Tools Used
-
-| Tool | Purpose |
-|---|---|
-| [Claude Code](https://claude.com/claude-code) | AI coding assistant — wrote and debugged code from plain instructions |
-| [al-folio](https://github.com/alshedivat/al-folio) | Website template built for academics |
-| [GitHub Pages](https://pages.github.com) | Free hosting with automatic deployment |
-| [D3.js](https://d3js.org) | Library used to draw the interactive research graph |
 
 ---
 
