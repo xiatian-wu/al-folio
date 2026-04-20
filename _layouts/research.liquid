@@ -57,6 +57,10 @@ layout: default
             <small class="text-muted ml-2">{{ proj_node.years }}</small>
           {% endif %}
         </h3>
+        {% if proj_page and proj_page.description %}
+          <p class="text-muted">{{ proj_page.description }}</p>
+        {% endif %}
+
         {% assign paper_ids = "" | split: "" %}
         {% for edge in site.data.graph.edges %}
           {% if edge.source == proj_node.id %}

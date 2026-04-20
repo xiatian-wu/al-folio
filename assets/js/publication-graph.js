@@ -139,7 +139,7 @@ function initGraph(data) {
     .join('text')
     .text(function(d) { return d.label; })
     .attr('font-size', 11)
-    .attr('fill', '#334155')
+    .style('fill', 'var(--global-text-color)')
     .attr('text-anchor', 'middle')
     .attr('pointer-events', 'none');
 
