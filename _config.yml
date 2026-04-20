@@ -2,16 +2,16 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Your Name # the website title (if blank, full name will be used instead)
-first_name: Your
-last_name: Name
-email: your@email.com
+title: Xiatian Iogansen # the website title (if blank, full name will be used instead)
+first_name: Xiatian
+last_name: Iogansen
+email: xiatian.iogansen@gwu.edu
 description: >
-  Researcher at the National Institute of Standards and Technology (NIST).
+  Postdoctoral Researcher at the George Washington University (GWU) and National Institute of Standards and Technology (NIST).
 footer_text: >
-  © 2026 Your Name. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+  © 2026 Xiatian Iogansen. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
   with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-keywords: research, measurement, NIST
+keywords: research, new vehicle technologies, travel behavior, data science
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -20,11 +20,11 @@ baseurl: /about-me # the subpath of your site, e.g. /blog/. Leave blank for root
 repository: xiatian-wu/about-me
 
 # Social links
-scholar_userid: ""
-orcid_id: ""
-linkedin_username: ""
+scholar_userid: "ASuKttYAAAAJ"
+orcid_id: "0000-0002-4851-1323"
+linkedin_username: "xiatianwu"
 
-last_updated: false # set to true if you want to display last updated in the footer
+last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
 
@@ -96,7 +96,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Notes & Updates # blog_name will be displayed in your blog page
-blog_description: Research updates, writing, and news.
+blog_description: #Research updates, writing, and news.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
